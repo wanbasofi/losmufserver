@@ -128,17 +128,8 @@ public class DataNasabah implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Total Unit Kendaraan")
 	private java.lang.Integer totalUnitKend;
 
-	@org.kie.api.definition.type.Label("Skor Mobil Pernikahan Pemilikan Rumah")
-	private java.lang.Integer skorMobilPernikahanPemilikanRumah;
-
 	@org.kie.api.definition.type.Label("Skor Mobil Lama Kerja")
 	private java.lang.Integer skorMobilLamaKerja;
-
-	@org.kie.api.definition.type.Label("Skor Mobil Kerja Debitur Usia Kendaraan")
-	private java.lang.Integer skorMobilKerjaDebiturUsiaKendaraan;
-
-	@org.kie.api.definition.type.Label("Skor Pemilikan Rumah Pekerjaan")
-	private java.lang.Integer skorPemilikanRumahPekerjaan;
 
 	@org.kie.api.definition.type.Label("Skor Status Pernikahan")
 	private Integer skorStatusPernikahan;
@@ -182,8 +173,17 @@ public class DataNasabah implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Installment Index")
 	private java.lang.Integer installmentIndex;
 
-	@org.kie.api.definition.type.Label(value = "Skor Total")
+	@org.kie.api.definition.type.Label("Skor Total")
 	private java.lang.Integer skorTotal;
+
+	@org.kie.api.definition.type.Label("Skor Mobil Pernikahan Pemilikan Rumah")
+	private java.lang.Integer skorMobilPernikahanRumah;
+
+	@org.kie.api.definition.type.Label("Skor Mobil Kerja Debitur Usia Kendaraan")
+	private java.lang.Integer skorMobilKerjaUsiaKend;
+
+	@org.kie.api.definition.type.Label(value = "Skor Pemilikan Rumah Pekerjaan")
+	private java.lang.Integer skorRumahPekerjaan;
 
 	public DataNasabah() {
 	}
@@ -364,39 +364,12 @@ public class DataNasabah implements java.io.Serializable {
 		this.totalUnitKend = totalUnitKend;
 	}
 
-	public java.lang.Integer getSkorMobilPernikahanPemilikanRumah() {
-		return this.skorMobilPernikahanPemilikanRumah;
-	}
-
-	public void setSkorMobilPernikahanPemilikanRumah(
-			java.lang.Integer skorMobilPernikahanPemilikanRumah) {
-		this.skorMobilPernikahanPemilikanRumah = skorMobilPernikahanPemilikanRumah;
-	}
-
 	public java.lang.Integer getSkorMobilLamaKerja() {
 		return this.skorMobilLamaKerja;
 	}
 
 	public void setSkorMobilLamaKerja(java.lang.Integer skorMobilLamaKerja) {
 		this.skorMobilLamaKerja = skorMobilLamaKerja;
-	}
-
-	public java.lang.Integer getSkorMobilKerjaDebiturUsiaKendaraan() {
-		return this.skorMobilKerjaDebiturUsiaKendaraan;
-	}
-
-	public void setSkorMobilKerjaDebiturUsiaKendaraan(
-			java.lang.Integer skorMobilKerjaDebiturUsiaKendaraan) {
-		this.skorMobilKerjaDebiturUsiaKendaraan = skorMobilKerjaDebiturUsiaKendaraan;
-	}
-
-	public java.lang.Integer getSkorPemilikanRumahPekerjaan() {
-		return this.skorPemilikanRumahPekerjaan;
-	}
-
-	public void setSkorPemilikanRumahPekerjaan(
-			java.lang.Integer skorPemilikanRumahPekerjaan) {
-		this.skorPemilikanRumahPekerjaan = skorPemilikanRumahPekerjaan;
 	}
 
 	public java.lang.String getStsAplikasiSebelum() {
@@ -666,6 +639,32 @@ public class DataNasabah implements java.io.Serializable {
 		this.skorTotal = skorTotal;
 	}
 
+	public java.lang.Integer getSkorMobilPernikahanRumah() {
+		return this.skorMobilPernikahanRumah;
+	}
+
+	public void setSkorMobilPernikahanRumah(
+			java.lang.Integer skorMobilPernikahanRumah) {
+		this.skorMobilPernikahanRumah = skorMobilPernikahanRumah;
+	}
+
+	public java.lang.Integer getSkorMobilKerjaUsiaKend() {
+		return this.skorMobilKerjaUsiaKend;
+	}
+
+	public void setSkorMobilKerjaUsiaKend(
+			java.lang.Integer skorMobilKerjaUsiaKend) {
+		this.skorMobilKerjaUsiaKend = skorMobilKerjaUsiaKend;
+	}
+
+	public java.lang.Integer getSkorRumahPekerjaan() {
+		return this.skorRumahPekerjaan;
+	}
+
+	public void setSkorRumahPekerjaan(java.lang.Integer skorRumahPekerjaan) {
+		this.skorRumahPekerjaan = skorRumahPekerjaan;
+	}
+
 	public DataNasabah(java.lang.String cbgAsal, java.lang.Integer aprLevel,
 			java.lang.String aprFunction, java.lang.String aprPlafond,
 			java.lang.Integer ovdSebelum, java.lang.Integer usiaKend,
@@ -687,10 +686,7 @@ public class DataNasabah implements java.io.Serializable {
 			java.lang.Integer tenorKredit, java.lang.Integer amountDP,
 			java.lang.String installmentType, java.lang.String creditScheme,
 			java.lang.Integer totalUnitKend,
-			java.lang.Integer skorMobilPernikahanPemilikanRumah,
 			java.lang.Integer skorMobilLamaKerja,
-			java.lang.Integer skorMobilKerjaDebiturUsiaKendaraan,
-			java.lang.Integer skorPemilikanRumahPekerjaan,
 			java.lang.Integer skorStatusPernikahan, java.lang.Double ratio,
 			java.lang.Integer ltv, java.lang.Integer skorInstallmentOTRRatio,
 			java.lang.Integer skorLamaKerja, java.lang.Integer skorLtv,
@@ -700,7 +696,10 @@ public class DataNasabah implements java.io.Serializable {
 			java.lang.Integer skorMobilMonthlyInstallmentIndex,
 			java.lang.Integer skorMobilMonthlyInstallmentOTRPortofolio,
 			java.lang.Integer installmentOTR,
-			java.lang.Integer installmentIndex, java.lang.Integer skorTotal) {
+			java.lang.Integer installmentIndex, java.lang.Integer skorTotal,
+			java.lang.Integer skorMobilPernikahanRumah,
+			java.lang.Integer skorMobilKerjaUsiaKend,
+			java.lang.Integer skorRumahPekerjaan) {
 		this.cbgAsal = cbgAsal;
 		this.aprLevel = aprLevel;
 		this.aprFunction = aprFunction;
@@ -741,10 +740,7 @@ public class DataNasabah implements java.io.Serializable {
 		this.installmentType = installmentType;
 		this.creditScheme = creditScheme;
 		this.totalUnitKend = totalUnitKend;
-		this.skorMobilPernikahanPemilikanRumah = skorMobilPernikahanPemilikanRumah;
 		this.skorMobilLamaKerja = skorMobilLamaKerja;
-		this.skorMobilKerjaDebiturUsiaKendaraan = skorMobilKerjaDebiturUsiaKendaraan;
-		this.skorPemilikanRumahPekerjaan = skorPemilikanRumahPekerjaan;
 		this.skorStatusPernikahan = skorStatusPernikahan;
 		this.ratio = ratio;
 		this.ltv = ltv;
@@ -760,6 +756,9 @@ public class DataNasabah implements java.io.Serializable {
 		this.installmentOTR = installmentOTR;
 		this.installmentIndex = installmentIndex;
 		this.skorTotal = skorTotal;
+		this.skorMobilPernikahanRumah = skorMobilPernikahanRumah;
+		this.skorMobilKerjaUsiaKend = skorMobilKerjaUsiaKend;
+		this.skorRumahPekerjaan = skorRumahPekerjaan;
 	}
 
 }
